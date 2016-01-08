@@ -1,0 +1,181 @@
+
+/*		Fonts		*/
+@font-face {
+    font-family: 'open_regular';
+    src: url('../fonts/opensans-regular.eot');
+    src: url('../fonts/opensans-regular.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/opensans-regular.woff') format('woff'),
+         url('../fonts/opensans-regular.ttf') format('truetype'),
+         url('../fonts/opensans-regular.svg#LatoRegular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'open_bold';
+    src: url('../fonts/opensans-bold.eot');
+    src: url('../fonts/opensans-bold.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/opensans-bold.woff') format('woff'),
+         url('../fonts/opensans-bold.ttf') format('truetype'),
+         url('../fonts/opensans-bold.svg#LatoRegular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'open_semibold';
+    src: url('../fonts/opensans-semibold.eot');
+    src: url('../fonts/opensans-semibold.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/opensans-semibold.woff') format('woff'),
+         url('../fonts/opensans-semibold.ttf') format('truetype'),
+         url('../fonts/opensans-semibold.svg#open_sanssemibold') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+body, ul, li, section, h3{margin: 0; padding: 0:}
+.header{
+  background: rgb(37, 90, 120);
+  border-bottom:0.2em solid rgb(237, 203, 24);
+  width: 100%;
+  height: 6em;
+  position: fixed;
+  z-index: 3;
+}
+.subscreva a i{
+          background-color: rgb(189, 163, 28);
+          color: #000;
+          font-size: 25px;
+          width: 38px;
+          height: 38px;
+          border-radius: 50%;
+          text-align: center;
+          line-height: 42px;
+          margin: 10px 15px;
+          vertical-align: middle;
+}
+.logo{width: 15%; height: 9em; float: left;}
+.logo img{width: 90%; }
+.subscreva { float:- right; font-size: 1em; color: #fff; text-align: right; padding:1em; text-decoration: none}
+.subscreva a {
+  text-decoration: none;
+  color: #fff;
+  font-family: "open_regular";
+  -webkit-transition: all 0.4s ease-in-out;
+  -moz-transition: all 0.4s ease-in-out;
+  -o-transition: all 0.4s ease-in-out;
+  -ms-transition: all 0.4s ease-in-out;
+  transition: all 0.4s ease-in-out;
+}
+.slider{
+  width: 101%;
+  height: 35em;
+  background: #f0f0f0;
+  display: block;
+  background: url('../img/aluno1.jpg') no-repeat fixed center center;
+  background-size: cover;
+}
+.captionslider{
+  width: 30%;
+  height: 5em;
+  margin-top: 15em;
+  margin-left: 10em;
+  position: absolute;
+}
+.captionslider p{
+  font-size: 2em;
+  color:rgb(212, 213, 213);
+  text-shadow: 1px 0px 1px #000;
+}
+.botaocaption{
+  width: 40%;
+  border: 1px solid rgb(126, 138, 34);
+  display: block;
+  text-decoration: none;
+  font-variant: small-caps;
+  text-align: center;
+  font-size: 2.5em;
+  color: rgb(245, 239, 148);
+  text-shadow: 1px 0px 1px #000;
+  background: rgba(22, 96, 113, 0.87);
+  -webkit-transition: all 0.3s ease-in-out;
+  -moz-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
+  -ms-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+
+}
+.missaoobjectivos, .ensino{width:100%; height: auto;}
+.missaoobjectivos p{
+  width:50%;
+  margin: 0 auto;
+  text-align: center;
+  font-size: 1.3em;
+  font-weight: 200;
+  font-family: "open_regular";
+  color: rgb(17, 49, 71);
+  font-style: italic;
+  text-shadow: 1px 0px 1px rgb(9, 9, 9);
+}
+.missaoobjectivos h3, .ensino h3 {
+  text-align: center;
+  font-family: "open_bold";
+  color:rgb(232, 232, 232);
+  background: rgb(37, 90, 120);
+  border-bottom:0.2em solid rgb(237, 203, 24);
+  padding: 0.3em 0;
+  display: block;
+  font-size: 1.5em;
+  font-variant: small-caps;
+  text-shadow: 1px 0px 1px rgb(9, 9, 9);
+}
+.from_inscricao{width: 30%; margin: 0 auto;  display: block; float: right}
+input[type="text"]{width: 100%; display: block; height: 2.5em; margin-bottom: 1em; border: none; outline: rgb(26, 38, 121); }
+.developerby p {font-size: 0.8em;font-weight: 100;text-align: center; margin: 1em;}
+/*		Responsive Layout		*/
+
+@media (max-width: 760px) {
+    .logo{width: 50%; height: 20em; }
+    .logo img{width:50%; height: 7em;}
+    .missaoobjectivos p{
+      width:80%;
+      margin: 1em auto;
+      text-align: center;
+      font-size: 1.3em;
+      font-weight: 100;
+      font-family: "open_regular";
+      color: #FFF;
+      text-shadow: 1px 1px 1px rgb(8, 48, 68);
+    }
+    .slider{
+      background: url('../img/hero.jpg') no-repeat fixed center center;
+      background-size: auto;
+    }
+    .captionslider{
+      width: 60%;
+      height: 5em;
+      margin-top: 18em;
+      margin-left: 2em;
+      position: absolute;
+    }
+    .captionslider p{
+      font-size: 1.6em;
+      text-shadow: 1px 0px 1px #000;
+    }
+    .botaocaption{
+      color:rgb(212, 213, 213);
+      width: 40%;
+      display: block;
+      text-decoration: none;
+      font-variant: small-caps;
+      text-align: center;
+      font-size: 1.5em;
+      color: rgb(245, 239, 148);
+      text-shadow: 1px 0px 1px #000;
+      background: rgba(22, 96, 113, 0.87)
+
+    }
+}
