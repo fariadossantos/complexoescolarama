@@ -196,6 +196,6 @@ body, ul, li, section, h3{margin: 0; padding: 0:}
       text-shadow: 1px 0px 1px #000;
       background: rgba(22, 96, 113, 0.87)
     }
-    .editar form{position:absolute; left:50%; top:50%; padding:20px; background:#fff; width:85%; height:40em; margin-left:-160px; margin-top:-10em; overflow: scroll;}
+    .editar form{position:absolute; left:50%; top:50%; padding:20px; background:#fff; width:85%; height:34em; margin-left:-160px; margin-top:-10em; overflow: scroll;}
     .editar form label input{padding:5px; border:5px solid #CCC; width:100%;}
 }
