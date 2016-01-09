@@ -70,17 +70,23 @@
 						<input type="tel" name="telemovel" placeholder="Telemóvel: 923 XXX XXX" /><br><br>
 						<input type="email" name="email" placeholder="E-mail: user@dominio.com" />
 				</label>
-
 				<label>
-						<span class="campo">Telefone:</span>
-						<input type="text" name="telefone" />
+						<span class="campo">Pai:</span>
+						<input type="text" name="pai" placeholder="Nome do pai" /><br><br>
+						<input type="tel" name="telpai" placeholder="Telemovel do pai" />
 				</label>
-
 				<label>
-						<span class="campo">Senha:</span>
-						<input type="text" name="code" />
+						<span class="campo">Mãe:</span>
+						<input type="text" name="mae"  placeholder="Nome da mãe"/> <br><br>
+
+						<input type="tel" name="telmae" placeholder="Telemovel da mãe"/>
 				</label>
-	        <input type="hidden" name="id" />
+				<label>
+						<span class="campo">Encarregado de Educação:</span>
+						<input type="text" name="mae"  placeholder="Nome do encarregado"/> <br><br>
+						<input type="text" name="residenciaencarregado"  placeholder="Residência do encarregado"/> <br><br>
+						<input type="tel" name="telmae" placeholder="Telemovel do encarregado"/>
+				</label>
 		</fieldset>
 		<fieldset>
 				<legend>DOCUMENTAÇÃO</legend>
@@ -103,13 +109,8 @@
 						<span class="campo">Certificado de Vacina:</span>
 						<input type="file" name="ceritifcadovacina" />
 				</label>
-
-				<label>
-						<span class="campo">Senha:</span>
-						<input type="text" name="code" />
-				</label>
 </fieldset>
-        <img src="img/load.gif" width="20" style="margin:8px 0 0 10px; display:none;" class="j_loadboxedit" />
+        <img src="img/load.gif" width="20" style="margin:8px 0 0 10px;" class="j_loadboxedit" />
         <input type="submit" value="Enviar" class="btnedit j_buttom_edit" />
         <input type="reset" value="Fechar" class="btnclose j_buttom_close" />
     </form>
