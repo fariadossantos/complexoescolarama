@@ -26,7 +26,7 @@
 						</div>
 					</li>
           <li>
-						<div class="ch-item ch-img-3">
+						<div class="ch-item ch-img-4">
 							<div class="ch-info">
 								<h4>ACTIVIDADES EXTRA CURRICULARES</h4>
 								<p>Natação, Capoeira e Teatro <a href="http://drbl.in/ekhp">Saiba mais</a></p>

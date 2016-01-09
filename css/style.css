@@ -15,15 +15,18 @@
 }
 
 .ch-img-1 {
-	background-image: url(../img/1.jpg);
+	background-image: url(../img/biblioteca.jpg);
 }
 
 .ch-img-2 {
-	background-image: url(../img/2.jpg);
+	background-image: url(../img/lab.jpg);
 }
 
 .ch-img-3 {
-	background-image: url(../img/3.jpg);
+	background-image: url(../img/iciclo.jpg);
+}
+.ch-img-4 {
+	background-image: url(../img/artes.jpg);
 }
 
 .ch-info {
