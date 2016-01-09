@@ -1,10 +1,12 @@
 $(function(){
   var escreva = $('#subscreva');
-  editar = $(".editar");
+  var fecharmodal = $('.j_buttom_close');
+  var inscricaomodal = $('.editar');
 
-  subscreva.click(function(){
-    editar.delay(1000).fadeIn(100);
+  fecharmodal.click(function(){
+    inscricaomodal.fadeOut('slow');
   })
+
 
   $(".voltarTopo").hide();
 
@@ -59,7 +61,7 @@ $(function(){
     type: 'POST',
   })
 
-  /*var slider = $('.slider');
+  var slider = $('.slider');
   escreva.click(function(){
     slider.slideUp('slow');
     $.ajax({
@@ -67,11 +69,11 @@ $(function(){
       beforeSend    : '',
       error         : '',
       success       : function (valores){
-        slider.append(valores).delay(300).fadeIn('slow');
+        $('.editar').fadeIn('slow');
 
       }
     });
 
-  });*/
+  });
 
 })
