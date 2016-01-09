@@ -166,7 +166,7 @@ input[type="text"]{width: 100%; display: block; height: 2.5em; margin-bottom: 1e
     }
     .slider{
       background: url('../img/aluno1.jpg') no-repeat fixed center center;
-      background-size: auto;
+      background-size: cover;
     }
     .captionslider{
       width: 60%;
