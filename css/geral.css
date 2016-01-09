@@ -132,6 +132,20 @@ body, ul, li, section, h3{margin: 0; padding: 0:}
   font-variant: small-caps;
   text-shadow: 1px 0px 1px rgb(9, 9, 9);
 }
+.voltarTopo {
+    background: none repeat scroll 0 0 rgba(13, 13, 13, 0.63) !important;
+    bottom: 20px !important;
+    color: #FFFFFF;
+    display: block;
+    font-size: 10px;
+    font-weight: bold;
+    height: 20px;
+    position: fixed;
+    right: 30px;
+    border: none;
+    text-transform: uppercase;
+    width: 120px;
+}
 .from_inscricao{width: 30%; margin: 0 auto;  display: block; float: right}
 input[type="text"]{width: 100%; display: block; height: 2.5em; margin-bottom: 1em; border: none; outline: rgb(26, 38, 121); }
 .developerby p {font-size: 0.8em;font-weight: 100;text-align: center; margin: 1em;}

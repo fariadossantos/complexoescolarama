@@ -1,6 +1,21 @@
 $(function(){
   var escreva = $('#subscreva');
 
+  $(".voltarTopo").hide();
+
+    $(function () {
+    $(window).scroll(function () {
+    if ($(this).scrollTop() > 300) {
+    $('.voltarTopo').fadeIn();
+    } else {
+    $('.voltarTopo').fadeOut();
+    }
+    });
+    $('.voltarTopo').click(function() {
+    $('body,html').animate({scrollTop:0},600);
+    });
+    });
+
   $("html").niceScroll({
     scrollspeed: 50,
     autohidemode : false,
@@ -11,8 +26,8 @@ $(function(){
     cursorcolor : '#1f1f1f',
     zindex : 999
   });
-  
-  $(".slider").owlCarousel({
+
+/*  $(".slider").owlCarousel({
     items : 1,
     navigation : true,
     pagination : false,
@@ -22,7 +37,7 @@ $(function(){
     responsive: true,
     autoPlay : true,
     transitionStyle : "fade"
-  });
+  });*/
   $.ajaxSetup({
     url: 'model/model.php',
     type: 'POST',

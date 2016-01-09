@@ -6,7 +6,7 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0" />
 		<?php require_once('util/import.php') ?>
 	</head>
-	<body>
+	<body id="voltarTopo">
 		<section class="header pull-left animated wow fadeInLeft " id="class">
 			<div class="logo pull-left" id="logo"><img src="img/logo.png" alt="Logotipo" /></div>
 			<p class=" animated wow fadeInLeft subscreva" data-wow-delay=".2s" id="subscreva"> <a href="#subscreva"><i class="fa fa-pencil"></i>Inscreva-se já</a></p>
@@ -36,6 +36,7 @@
 			<h3>Instituição & Ensino</h3>
 			<?php require("ciclefect.php"); ?>
 		</section>
+		<input type="button" class="voltarTopo" onclick="$('html,body').animate({scrollTop: $('#voltarTopo').offset().top}, 2000);" value="Voltar ao topo" >
 		<?php require("footer.php") ?>
 
 	</body>
