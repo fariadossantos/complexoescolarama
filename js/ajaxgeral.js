@@ -1,5 +1,10 @@
 $(function(){
   var escreva = $('#subscreva');
+  editar = $(".editar");
+
+  subscreva.click(function(){
+    editar.delay(1000).fadeIn(100);
+  })
 
   $(".voltarTopo").hide();
 
@@ -27,6 +32,17 @@ $(function(){
     zindex : 999
   });
 
+  $(".editar form").niceScroll({
+    scrollspeed: 50,
+    autohidemode : false,
+    cursorwidth : 8,
+    cursorborderradius: 8,
+    cursorborder : "0",
+    background : "rgba(48, 48, 48, .4)",
+    cursorcolor : '#1f1f1f',
+    zindex : 999
+  });
+
 /*  $(".slider").owlCarousel({
     items : 1,
     navigation : true,
@@ -43,7 +59,7 @@ $(function(){
     type: 'POST',
   })
 
-  var slider = $('.slider');
+  /*var slider = $('.slider');
   escreva.click(function(){
     slider.slideUp('slow');
     $.ajax({
@@ -56,6 +72,6 @@ $(function(){
       }
     });
 
-  });
+  });*/
 
 })

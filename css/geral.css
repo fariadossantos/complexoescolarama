@@ -132,6 +132,7 @@ body, ul, li, section, h3{margin: 0; padding: 0:}
   font-variant: small-caps;
   text-shadow: 1px 0px 1px rgb(9, 9, 9);
 }
+
 .voltarTopo {
     background: none repeat scroll 0 0 rgba(13, 13, 13, 0.63) !important;
     bottom: 20px !important;
@@ -146,9 +147,13 @@ body, ul, li, section, h3{margin: 0; padding: 0:}
     text-transform: uppercase;
     width: 120px;
 }
-.from_inscricao{width: 30%; margin: 0 auto;  display: block; float: right}
-input[type="text"]{width: 100%; display: block; height: 2.5em; margin-bottom: 1em; border: none; outline: rgb(26, 38, 121); }
-.developerby p {font-size: 0.8em;font-weight: 100;text-align: center; margin: 1em;}
+.editar{position:fixed; height:100%; width:100%; background:rgba(0,0,0,0.4) url(../img/load.gif) center center no-repeat; left:0px; top:0px; display: none;}
+.editar form{position:absolute; left:50%; top:50%; padding:20px; background:#fff; width:50%; height:40em; margin-left:-160px; margin-top:-15em; overflow-y: scroll;}
+.editar form label{display:block; margin-bottom:1em; color: rgb(36, 36, 36)}
+.editar form label .campo{display:block; font-size:1em;}
+.editar form label input,select{padding:5px; border:5px solid #CCC; width:80%;}
+.editar form .btnedit{display:block; margin:5px 0 0 0; float:left; cursor:pointer; border: none; padding: 1em; background: rgb(37, 90, 120);}
+.editar form .btnclose{display:block; margin:5px 0 0 0; float:right; cursor:pointer;}
 /*		Responsive Layout		*/
 
 @media (max-width: 760px) {
@@ -190,6 +195,7 @@ input[type="text"]{width: 100%; display: block; height: 2.5em; margin-bottom: 1e
       color: rgb(245, 239, 148);
       text-shadow: 1px 0px 1px #000;
       background: rgba(22, 96, 113, 0.87)
-
     }
+    .editar form{position:absolute; left:50%; top:50%; padding:20px; background:#fff; width:85%; height:40em; margin-left:-160px; margin-top:-10em; overflow: scroll;}
+    .editar form label input{padding:5px; border:5px solid #CCC; width:100%;}
 }
