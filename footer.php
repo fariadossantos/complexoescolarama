@@ -31,10 +31,10 @@
     <p class="footer-company-about">
       <span>Links úteis</span>
     </p>
-    <a href="#">Jornal de Angola</a><br>
-    <a href="#">Wikipédia</a><br>
+    <a href="http://jornaldeangola.sapo.ao//">Jornal de Angola</a><br>
+    <a href="http://wikipedia.org">Wikipédia</a><br>
     <a href="#">Learn</a><br>
-    <a href="#">Google Académico</a><br>
+    <a href="https://scholar.google.pt/">Google Académico</a><br>
   </div><br>
   <div class="developerby">
     <p class="copyright animated wow fadeIn" data-wow-duration="2s">© 2015 <a href="http://quitambasantos.blogspot.com" target="_blank"><strong>Complexo Escolar AMA</strong></a>. All Rights Reserved | By: SmartBantu</p>
