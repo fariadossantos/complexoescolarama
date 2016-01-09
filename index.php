@@ -4,6 +4,7 @@
 		<meta charset="utf-8">
 		<title>Complexo Escolar AMA</title>
 		<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0" />
+		<link rel="shortcut icon"  href=img/favicon.ico sizes="16x16" type="image/x-icon">
 		<?php require_once('util/import.php') ?>
 	</head>
 	<body id="voltarTopo">
