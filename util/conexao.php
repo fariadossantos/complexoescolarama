@@ -1,8 +1,8 @@
 <?php
-define('HOST', 'localhost');
-define('USER', 'root');
-define('PASSWORD', '');
-define('BANCOSELECT', 'complexoescolarama');
+define('HOST', 'mysql.hostinger.com.br');
+define('USER', 'u734996712_cea');
+define('PASSWORD', '1q2w3e4r5t6ycea');
+define('BANCOSELECT', 'u734996712_cea');
 
 $conexao = mysql_connect(HOST, USER, PASSWORD) or die('1');
 $selectdb = mysql_select_db(BANCOSELECT, $conexao);

@@ -20,7 +20,7 @@
 
     <div>
       <i class="fa fa-envelope"></i>
-      <p><a href="mailto:info@cea.co.ao">info@cea.co.ao</a></p>
+      <p><a href="mailto:complexoescolarama@gmail.com">complexoescolarama@gmail.com</a></p>
     </div>
       <a href="#"><i class="fa fa-facebook"></i></a>
       <a href="#"><i class="fa fa-twitter"></i></a>
