@@ -2,6 +2,13 @@ $(function(){
   var escreva = $('#subscreva');
   var fecharmodal = $('.j_buttom_close');
   var inscricaomodal = $('.editar');
+  var formulario = $('form');
+  var submitload = $('.submitload');
+
+
+  formulario.submit(function(){
+    return false;
+  })
 
   fecharmodal.click(function(){
     inscricaomodal.fadeOut('slow');
@@ -56,24 +63,30 @@ $(function(){
     autoPlay : true,
     transitionStyle : "fade"
   });*/
+  function carregando(){
+    submitload.empty().html('<img src="img/load.gif" width="20" style="margin:8px 0 0 10px;" class="j_loadboxedit" />Enviando...').fadeIn('slow');
+  }
+
   $.ajaxSetup({
     url: 'model/model.php',
     type: 'POST',
+    beforeSend: carregando
   })
 
-  var slider = $('.slider');
-  escreva.click(function(){
-    slider.slideUp('slow');
+  var fazerinscricao = $('.forminscricao');
+
+  fazerinscricao.submit(function(){
+    var acao = "&acao=fazerinscricao";
+    var dados = $(this).serialize();
+    var enviar = dados+acao;
     $.ajax({
-      data          : "acao=inscricao",
-      beforeSend    : '',
-      error         : '',
-      success       : function (valores){
-        $('.editar').fadeIn('slow');
-
+      data: enviar,
+      success:function(resposta){
+        $('.header').empty().html(resposta);
       }
-    });
+    })
+  })
 
-  });
+
 
 })

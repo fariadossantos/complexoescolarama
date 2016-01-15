@@ -1,23 +1,14 @@
 <?php
-    $acao = $_POST['acao'];
+  sleep(1);
+$acao = $_POST['acao'];
+  switch ($acao) {
+    case 'fazerinscricao':
+      print_r($_REQUEST);
+        print_r($_FILES);
+      break;
 
-    if($acao=="inscricao"){
-      //echo '	<h3>INSCREVA-SE</h3>';
-      echo '<form class="from_inscricao" action="index.html" method="post">';
-        echo '<input type="text" name="name" value="">';
-        echo '<input type="text" name="name" value="">';
-        echo '<input type="text" name="name" value="">';
-        echo '<input type="text" name="name" value="">';
-        echo '<input type="text" name="name" value="">';
-        echo '<input type="text" name="name" value="">';
-        echo '<input type="text" name="name" value="">';
-        echo '<input type="text" name="name" value="">';
-        echo '<input type="text" name="name" value="">';
-        echo '<input type="text" name="name" value="">';
-
-      echo ' ';
-
-
-    }
-
+    default:
+      echo "Ação não existente";
+      break;
+  }
  ?>
