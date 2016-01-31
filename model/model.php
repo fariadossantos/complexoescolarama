@@ -1,5 +1,5 @@
 <?php
-  sleep(1);
+/*  sleep(1);
 $acao = $_POST['acao'];
   switch ($acao) {
     case 'fazerinscricao':
@@ -10,5 +10,7 @@ $acao = $_POST['acao'];
     default:
       echo "Ação não existente";
       break;
-  }
+  }*/
+  print_r($_POST);
+    print_r($_FILES);
  ?>

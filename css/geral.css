@@ -36,7 +36,8 @@
 }
 
 
-body, ul, li, section, h3{margin: 0; padding: 0:}
+body, section, h3{margin: 0; padding: 0;}
+ ul, li{ list-style: none; margin: 0; padding: 0}
 .header{
   background: rgb(37, 90, 120);
   border-bottom:0.2em solid rgb(237, 203, 24);
@@ -71,12 +72,12 @@ body, ul, li, section, h3{margin: 0; padding: 0:}
   transition: all 0.4s ease-in-out;
 }
 .slider{
-  width: 101%;
-  height: 35em;
+  width: 100%;
+  height: 30em;
   background: #f0f0f0;
   display: block;
-  background: url('../img/aluno1.jpg') no-repeat fixed center center;
-  background-size: cover;
+  /*background: url('../img/aluno1.jpg') no-repeat fixed center center;
+  background-size: cover;*/
 }
 .captionslider{
   width: 30%;
@@ -91,13 +92,14 @@ body, ul, li, section, h3{margin: 0; padding: 0:}
   text-shadow: 1px 0px 1px #000;
 }
 .botaocaption{
-  width: 40%;
+  width: 30%;
+  margin-left: 1.5em;
   border: 1px solid rgb(126, 138, 34);
   display: block;
   text-decoration: none;
   font-variant: small-caps;
   text-align: center;
-  font-size: 2.5em;
+  font-size: 2em;
   color: rgb(245, 239, 148);
   text-shadow: 1px 0px 1px #000;
   background: rgba(22, 96, 113, 0.87);
@@ -149,7 +151,7 @@ body, ul, li, section, h3{margin: 0; padding: 0:}
 }
 .submitload{display: none}
 .editar{ height:100%; width:100%; background:rgba(0,0,0,0.4) url(../img/load.gif) center center no-repeat; left:0px; top:0px;}
-form{ padding:20px; background:#fff; text-align: center}
+form{ padding:20px; background:#fff; text-align: center; margin: 0 auto; display: block;;}
 fieldset{border: 1px solid rgb(203, 195, 18); width: 50%; margin: 0 auto}
 legend{text-align: center; font-size: 1.6em}
 form label{display:block; margin-bottom:1em; color: rgb(36, 36, 36);}
@@ -164,7 +166,7 @@ form .btnclose{display:inline-block; cursor:pointer; border: none; padding: 1em;
     .logo{width: 50%; height: 20em; }
     .logo img{width:50%; height: 7em;}
     .missaoobjectivos p{
-      width:80%;
+      width:70%;
       margin: 1em auto;
       text-align: center;
       font-size: 1.3em;
@@ -172,10 +174,6 @@ form .btnclose{display:inline-block; cursor:pointer; border: none; padding: 1em;
       font-family: "open_regular";
       color: #FFF;
       text-shadow: 1px 1px 1px rgb(8, 48, 68);
-    }
-    .slider{
-      background: url('../img/aluno1.jpg') no-repeat fixed center center;
-      background-size: cover;
     }
     .captionslider{
       width: 60%;
@@ -190,7 +188,7 @@ form .btnclose{display:inline-block; cursor:pointer; border: none; padding: 1em;
     }
     .botaocaption{
       color:rgb(212, 213, 213);
-      width: 40%;
+      width: 80%;
       display: block;
       text-decoration: none;
       font-variant: small-caps;
@@ -200,6 +198,13 @@ form .btnclose{display:inline-block; cursor:pointer; border: none; padding: 1em;
       text-shadow: 1px 0px 1px #000;
       background: rgba(22, 96, 113, 0.87)
     }
-    .editar form{position:absolute; left:50%; top:50%; padding:20px; background:#fff; width:85%; height:34em; margin-left:-160px; margin-top:-10em; overflow: scroll;}
-    .editar form label input{padding:5px; border:5px solid #CCC; width:100%;}
+    form{ padding:20px; background:#fff; text-align: center}
+    fieldset{border: 1px solid rgb(203, 195, 18); width: 100%; margin: 0 auto}
+    legend{text-align: center; font-size: 1.6em}
+    form label{display:block; margin-bottom:1em; color: rgb(36, 36, 36);}
+    form label .campo{display:block; font-size:1em; margin-left: 3em; text-align: left}
+     form label input{padding:5px; border:5px solid #CCC; width:70%;}
+     select{padding:5px; border:5px solid #CCC; width:70%;}
+    form .btnedit{display:inline-block; margin:5px 0 0 0; cursor:pointer; border: none; padding: 1em; background: rgb(37, 90, 120);}
+    form .btnclose{display:inline-block; cursor:pointer; border: none; padding: 1em; background: rgb(231, 89, 75);}
 }

@@ -21,14 +21,14 @@ require_once('model/funcoes.php');
 		<section class="header pull-left animated wow fadeInLeft " id="class">
 			<div class="logo pull-left" id="logo"><img src="img/logo.png" alt="Logotipo" /></div>
 			<p class=" animated wow fadeInLeft subscreva" data-wow-delay=".2s" id="subscreva"> <a href="index.php?a=<?php echo'inscricao';?>"><i class="fa fa-pencil"></i>Inscreva-se já</a></p>
-		</section>
+		</section><br><br><br><br><br>
 		<section class="slider animated wow fadeInLeft" id="slider">
-			<div class="captionslider">
-					<p>
-						Ensino de qualidade é para toda vida, portanto inscreva o seu filho...
-					</p>
-					<a href="" class="botaocaption"><i class="fa fa-thumbs-up"></i> aqui..</a>
-			</div>
+			<ul class="cb-slideshow">
+					<li><span></span><div><h3>Ensino de qualidade é para todos, faça já a inscrição!</h3> <a class="botaocaption" href="#"><i class="fa fa-thumbs-up">Aqui...</i></a></div></li>
+					<li><span></span><div><h3>Os nossos primeiros alunos estão a beneficiar-se de materiais escolares, independentemente dos níveis!</h3><a class="botaocaption" href="#"><i class="fa fa-thumbs-up">Inscreva-se!</a></i></div></li>
+					<li><span></span><div><h3>Aqui, estimulamos a recriação, companherismo e ajuda mútua</h3><a class="botaocaption" href="index.php?a=inscricao"><i class="fa fa-thumbs-up">Inscreva-se!</i></a></div></li>
+					
+			</ul>
 		</section>
 		<section class="missaoobjectivos animated wow fadeInLeft" data-wow-delay="0s" id="missaoobjectivos">
 		<?php

@@ -74,14 +74,16 @@ $(function(){
   })
 
   var fazerinscricao = $('.forminscricao');
-
+  var dados = new FormData($(this)[0]);
   fazerinscricao.submit(function(){
+      alert(dados);
     var acao = "&acao=fazerinscricao";
-    var dados = $(this).serialize();
-    var enviar = dados+acao;
+    //var dados = $(this).serialize();
+    //var enviar = dados+acao;
     $.ajax({
-      data: enviar,
+      data: dados,
       success:function(resposta){
+
         $('.header').empty().html(resposta);
       }
     })
